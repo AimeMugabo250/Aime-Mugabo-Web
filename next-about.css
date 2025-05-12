@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  margin: 0;         
+}
+
+:root {
+  /* Light Theme */
+  --bg: #ffffff;
+  --text: #111111;
+  --header-bg: rgba(0, 0, 0, 0.7);
+  --footer-bg: #0b1d34;
+  --card-bg: #ffffff;
+  --shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  --title-color: #05264e;
+  --subtext: #666666;
+  --nav-text: #ffffff;
+  --accent: #ff6b6b;
+}
+
+:root.dark {
+  /* Dark Theme */
+  --bg: #121212;
+  --text: #ffffff;
+  --header-bg: rgba(0, 0, 0, 0.9);
+  --footer-bg: #000000;
+  --card-bg: #1e1e1e;
+  --shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  --title-color: #ffffff;
+  --subtext: #aaaaaa;
+  --nav-text: #ffffff;
+  --accent: #ff8e8e;
+}
+
+/* Theme Toggle */
+#theme-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--nav-text);
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+    
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  color: white;
+}
+    
+headering {
+  color: #000;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+    
+headering h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  margin-top: 2.4cm;
+  color: #7b9579;
+}
+    
+headering p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.byanze{
+  color: #a7b7cb;
+}
+        
+.container {
+  background: rgb(213, 206, 206);
+  color: #333;
+  margin: 2rem auto;
+  margin-top: -5rem;
+  border-radius: 6px;
+  padding: 0 2rem 2rem 2rem;
+}
+#ifoto{
+    width: 410px;
+}
+      
+h2 {
+  margin-bottom: 1rem;
+  color: #000;
+}
+    
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+    
+.project {
+  background: #f9f9f9;
+  border-radius: 6px;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.project img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+   
+.project h4 {
+  margin: 0.5rem 0 0.2rem;
+  color: #000;
+}
+    
+.project p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Footer */
+
+footer.footer {
+
+  left: 0;
+  position: absolute;
+  height: auto;
+  /* background-color: #0b1d34; */
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  margin-top: 2.4cm;
+  font-size: 2rem;
+  width:  100%;
+  margin-bottom: 0;
+}
+    
+@media (max-width: 600px) {
+  #ifoto {
+    width: fit-content;
+}
+
+.project img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+  headering h1 {
+     font-size: 25.5px;
+  }
+  .byanze{
+    display: none;
+    background: yellow;
+  }
+
+  .container {
+    color: #333;
+    margin: 2rem auto;
+    margin-top: -5rem;
+    border-radius: 6px;
+    padding: 0 2rem 2rem 2rem;
+  }
+}

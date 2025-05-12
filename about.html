@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mugabo singer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="next-about.css">
+    <link rel="stylesheet" href="next.css">
+
+</head>
+<body>
+
+    <header id="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">AIME - MUGABO</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="videos.html">Videos / Audio</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                  <button id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                  </button>
+                </li>
+            </ul>
+            <div class="menu-toggle">☰</div>
+        </nav>
+    </header>
+    
+    </head>
+    <body>
+    
+      <headering>
+        <h1>I am a modern music artist in the name of God.</h1>
+
+        <p class="byanze">Listen all songs on this website, they help you to be happy and don't keep them to yourself, share the good things on this website with others, also follow my all social media from contact. </p>
+        
+      </header>
+    
+      <div class="container">
+        
+        <h2>My Images Here...</h2>
+        <div class="projects">
+          <div class="project">
+            <img id="ifoto" src="image001/mugabo001.jpg" alt="Aime First Image">
+            <h4>When i' m in meditations</h4>
+            <p>Rwanda / Kigali</p>
+          </div>
+          <div class="project">
+            <img src="image001/image003_imresizer.jpg" alt="Aime Second Image">
+            <h4>Good Places and Good People still exist</h4>
+            <p>I found a true friend, Jesus, who made me.</p>
+          </div>
+          <div class="project">
+            <img src="image001/image002.jpeg" alt="Aime Thrid Image">
+            <h4>I am happy for once. Thank God.</h4>
+            <p>A very beautiful and peaceful place.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+  <footer class="footer">
+    <p>
+      © Copyright 2025 by <b>Aime Mugabo</b> | Designer <b>Info : </b><b>Email</b> <b>:</b> mugaboaime222@gmail.com. <br> <b>Tel :</b> +250791570587.
+    </p>
+  </footer>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Mobile menu toggle
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navLinks = document.querySelector('.nav-links');
+      menuToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+
+      // Theme management
+      const themeToggle = document.getElementById('theme-toggle');
+      const themeIcon = themeToggle.querySelector('i');
+      
+      // Initialize theme
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+      const currentTheme = localStorage.getItem('theme') || 
+                          (prefersDark.matches ? 'dark' : 'light');
+      
+      if (currentTheme === 'dark') {
+        document.documentElement.classList.add('dark');
+        themeIcon.classList.replace('fa-moon', 'fa-sun');
+      }
+      
+      // Toggle handler
+      themeToggle.addEventListener('click', () => {
+        const isDark = document.documentElement.classList.toggle('dark');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        themeIcon.classList.toggle('fa-moon', !isDark);
+        themeIcon.classList.toggle('fa-sun', isDark);
+      });
+      
+      // Watch for system theme changes
+      prefersDark.addEventListener('change', (e) => {
+        if (!localStorage.getItem('theme')) {
+          document.documentElement.classList.toggle('dark', e.matches);
+          themeIcon.classList.toggle('fa-moon', !e.matches);
+          themeIcon.classList.toggle('fa-sun', e.matches);
+        }
+      });
+    });
+</script>
+
+<script src="index.js"></script>
+
+</body>
+</html>

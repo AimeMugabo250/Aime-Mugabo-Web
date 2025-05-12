@@ -1,0 +1,239 @@
+:root {
+  /* Light Theme */
+  --bg: #ffffff;
+  --text: #111111;
+  --header-bg: rgba(0, 0, 0, 0.7);
+  --footer-bg: #0b1d34;
+  --card-bg: #ffffff;
+  --shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  --title-color: #05264e;
+  --subtext: #666666;
+  --nav-text: #ffffff;
+  --accent: #ff6b6b;
+}
+
+:root.dark {
+  /* Dark Theme */
+  --bg: #121212;
+  --text: #ffffff;
+  --header-bg: rgba(0, 0, 0, 0.9);
+  --footer-bg: #000000;
+  --card-bg: #1e1e1e;
+  --shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  --title-color: #ffffff;
+  --subtext: #aaaaaa;
+  --nav-text: #ffffff;
+  --accent: #ff8e8e;
+}
+
+/* Theme Toggle */
+#theme-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--nav-text);
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8fafa;
+  }
+  
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+  }
+  
+  .feature-box {
+    margin-top: 1.2cm;
+    background: rgb(201, 227, 53);
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .feature-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  .icon {
+    background: #fdbb2d;
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+  
+  h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+    color: var(--text);
+  }
+  
+  p {
+    font-size: 14px;
+    color: var(--text);
+    color: var(--title-color);
+  }
+
+  h3 p{
+    color: var(--text);
+  }
+
+  .song-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--text);
+    margin-top: 4cm;
+  }
+
+
+
+  @media (max-width: 600px) {
+    .features {
+      gap: 25px; /* Adjusted vertical spacing between cards */
+      padding: 20px 0; /* Less side padding for full-width feel */
+      flex-direction: column; /* Stack cards vertically */
+      align-items: center; /* Center cards horizontally */
+      margin-top: 1.2cm;
+    }
+  
+    .feature-box {
+      width: 90%;            /* Full width but with padding */
+      max-width: 320px;      /* Matches the visual size in the image */
+      padding: 30px 20px;    /* Balanced padding for mobile */
+      margin: 0;             /* Removes weird top margin */
+    }
+  
+    .icon {
+      font-size: 32px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+     .song-title {
+      font-size: 24px;
+      margin-top: 122px;
+    }
+  }
+  
+  #emailBtn {
+    padding: 12px 24px;
+    background-color: #4285F4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#emailBtn:hover {
+    background-color: #3367D6;
+}
+.center-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+
+
+
+
+
+
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 20px;
+  }
+  
+  .feature-box {
+    background: white;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease-in-out;
+  }
+  .feature-box a {
+    text-decoration: none;
+    color: #000;
+  }
+  .feature-box a:hover {
+    text-decoration: underline;
+    color: #fdbb2d;
+  }
+  
+  .feature-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  .icon {
+    background: #fdbb2d;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 15px;
+    width: 70px;
+    height: 70px;
+  }
+  
+  .icon img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+    color: #000;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #fff;
+  }
+
+  /* Footer */
+  footer.footer {
+    height: auto;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    margin-top: 2.4cm;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 600px) {
+    .feature-box {
+      width: 100%;
+      max-width: 350px;
+    }
+  
+    .features {
+      gap: 10px;
+    }
+  }
+  
