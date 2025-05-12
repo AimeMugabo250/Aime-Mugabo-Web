@@ -108,7 +108,7 @@ body {
     .features {
       gap: 25px; /* Adjusted vertical spacing between cards */
       padding: 20px 0; /* Less side padding for full-width feel */
-      flex-direction: column; /* Stack cards vertically */
+/*       flex-direction: column;  */
       align-items: center; /* Center cards horizontally */
       margin-top: 1.2cm;
     }
