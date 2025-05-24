@@ -1,3 +1,8 @@
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8273530214016046"
+     crossorigin="anonymous"></script>
+
+
 document.addEventListener('DOMContentLoaded', function() {
     // Slider functionality
     const slides = document.querySelectorAll('.slide');
